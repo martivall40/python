@@ -90,9 +90,6 @@ def about():
 def ajuda():
 	webbrowser.open('https://martivall.cat') # ip wordpres
 
-def aboutProgram():
-	webbrowser.open('https://docs.martivall.cat') # ip lamp
-
 def cut():
 	pya.hotkey('ctrl', 'x')
 
@@ -114,7 +111,6 @@ def popup(event):
 	m.add_command(label ="informació", command=informacio)
 	m.add_command(label ="ajuda", command=ajuda)
 	m.add_command(label="about us", command=about)
-	m.add_command(label="about program", command=aboutProgram)
 	m.add_separator()
 	m.add_command(label ="canviar servidor", command=lambda: principi(1))
 	m.add_command(label ="sortir", command=tancar)
@@ -787,7 +783,6 @@ def aplicacio(*args):
 	menuAj.add_command(label="informació", command=informacio)
 	menuAj.add_command(label="ajuda", command=ajuda)
 	menuAj.add_command(label="about us", command=about)
-	menuAj.add_command(label="about Program", command=aboutProgram)
 
 
 	menu.add_cascade(label="Aplicació", menu=menuAp)
